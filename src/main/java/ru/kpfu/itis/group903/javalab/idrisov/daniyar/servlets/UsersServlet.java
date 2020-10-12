@@ -23,10 +23,10 @@ public class UsersServlet extends HttpServlet {
     public void init() throws ServletException {
 
         HikariConfig hikariConfig = new HikariConfig();
-        hikariConfig.setJdbcUrl("jdbc:postgresql://localhost:5432/my_first_database");
+        hikariConfig.setJdbcUrl("...");
         hikariConfig.setDriverClassName("org.postgresql.Driver");
         hikariConfig.setUsername("postgres");
-        hikariConfig.setPassword("zxcdfg270301");
+        hikariConfig.setPassword("...");
         hikariConfig.setMaximumPoolSize(5);
         HikariDataSource dataSource = new HikariDataSource(hikariConfig);
 
